@@ -9,4 +9,14 @@ Gumbel-softmax 이다. Gumbel Distribution은 최대 혹은 최소값의 분포�
 
 ![concrete1](https://github.com/TaeKyuIm/thesis_study/blob/main/image/concrete1.jpg?raw=true)
 
-보다시피 Discrete 일때는 1, 0으로 구분이 되지만, Concrete 일때는 검은색과 흰색 사이의 색깔로 결과가 표시 된다.
+보다시피 Discrete 일때는 검은색, 흰색처럼 1, 0으로 구분이 되지만, Concrete 일때는 검은색과 흰색 사이의 색깔로 결과가 표시 된다.  
+
+![concrete2](https://github.com/TaeKyuIm/thesis_study/blob/main/image/concrete2.jpg?raw=true)
+
+원래는 Simplex 형태로 검은색 삼각형이나, Concrete 분포를 적용시키니 파란색깔로 값에 대한 Continuous 한 분포가 나왔다.
+
+![concrete3](https://github.com/TaeKyuIm/thesis_study/blob/main/image/concrete3.jpg?raw=true)
+
+이거는 예시인데, $\lambda$ 즉 Temperature가 올라감에 따라 점점 분포가 부드러워 진다.
+
+왜 이렇게 분포를 부드럽게 하는 것일까? 바로 연속형 변수의 reparameterization을 활용하기 위해서다.
